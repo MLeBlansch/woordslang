@@ -7,6 +7,9 @@ To research:
 ## Data sources
 - https://a-z-animals.com/animals/
 
+![starting_letters](img/starting_letters.png)
+![ending_letters](img/ending_letters.png)
+
 ## Models
 
 ### Edge count based graph

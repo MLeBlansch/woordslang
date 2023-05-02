@@ -1,4 +1,5 @@
 import numpy as np
+from plotting import plot_bars
 
 grouped = dict()        # key: start and end letter, value: number of animals
 start_letters = dict()  # key: start letter, value: number of animals
@@ -36,5 +37,5 @@ print('Starting letters: ', sorted(list({entry[0][0] for entry in parsed})))
 print('Ending letters: ', sorted(list({entry[0][-1] for entry in parsed})))
 print('Total animals: ', np.sum(list(grouped.values())))
 
-
-# TODO: plots for order number per start/end letter and groups
+plot_bars(list(start_letters.items()), 'Starting letters', 'Letter', 'Count', True, 'starting_letters.png')
+plot_bars(list(end_letters.items()), 'Ending letters', 'Letter', 'Count', True, 'ending_letters.png')
