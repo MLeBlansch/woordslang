@@ -1,10 +1,11 @@
 import numpy as np
 
-grouped = dict()
-start_letters = dict()
-end_letters = dict()
+grouped = dict()        # key: start and end letter, value: number of animals
+start_letters = dict()  # key: start letter, value: number of animals
+end_letters = dict()    # key: end letter, value: number of animals
 
 for letter in range(ord('A'), ord('Z') + 1):
+    letter = chr(letter)
     start_letters[letter] = 0
     end_letters[letter] = 0
 
