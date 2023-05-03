@@ -1,5 +1,5 @@
 import numpy as np
-from plotting import plot_bars
+from plotting import *
 
 grouped = dict()        # key: start and end letter, value: number of animals
 start_letters = dict()  # key: start letter, value: number of animals
@@ -39,3 +39,7 @@ print('Total animals: ', np.sum(list(grouped.values())))
 
 plot_bars(list(start_letters.items()), 'Starting letters', 'Letter', 'Count', True, 'starting_letters.png')
 plot_bars(list(end_letters.items()), 'Ending letters', 'Letter', 'Count', True, 'ending_letters.png')
+plot_cumulative(list(start_letters.values()), 'Starting letters', True, 'starting_letters_cumulative.png')
+plot_cumulative(list(end_letters.values()), 'Ending letters', True, 'ending_letters_cumulative.png')
+
+plot_cumulative(list(grouped.values()), 'Starting and ending letters', True, 'starting_ending_letters_cumulative.png')

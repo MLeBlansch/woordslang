@@ -9,6 +9,9 @@ To research:
 
 ![starting_letters](img/starting_letters.png)
 ![ending_letters](img/ending_letters.png)
+![starting_letters_cumulative](img/starting_letters_cumulative.png)
+![ending_letters_cumulative](img/ending_letters_cumulative.png)
+![starting_and_ending_letters_cumulative](img/starting_ending_letters_cumulative.png)
 
 ## Models
 
