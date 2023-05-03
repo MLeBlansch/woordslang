@@ -36,6 +36,7 @@ def plot_cumulative(counts, title, save=False, filename='plot.png'):
 
     fig, ax = plt.subplots()
     plt.grid()
+    ax.margins(x=0, y=0)
     ax.plot(x, y)
     ax.set_title(f'Size distribution: {title}')
     # ax.set_xlabel(xlabel)
